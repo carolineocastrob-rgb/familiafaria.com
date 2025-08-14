@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Documentos Históricos &mdash; Familia Faria</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Documentos históricos da Família Faria" />
+	<meta name="keywords" content="familia faria, documentos, certidoes, historia, registros" />
+	<meta name="author" content="Familia Faria" />
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		.simple-header {
+			background: #fff;
+			padding: 20px 0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1000;
+			box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+		}
+		.simple-header .logo {
+			color: #000;
+			font-size: 30px;
+			font-weight: bold;
+			text-decoration: none;
+			font-family: "Roboto Slab", sans-serif;
+			line-height: 1;
+		}
+		.simple-header .logo span {
+			color: #f9ad81;
+		}
+		.simple-header .nav-menu {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			line-height: 1;
+		}
+		.simple-header .nav-menu li {
+			display: inline-block;
+			margin-left: 25px;
+			vertical-align: middle;
+		}
+		.simple-header .nav-menu a {
+			color: rgba(0, 0, 0, 0.8);
+			text-decoration: none;
+			font-size: 15px;
+			font-family: "Roboto Slab", sans-serif;
+			border-bottom: 2px solid transparent;
+			transition: 0.5s;
+			white-space: nowrap;
+		}
+		.simple-header .nav-menu a:hover {
+			color: #f9ad81;
+		}
+		.simple-header .nav-menu a.active {
+			color: #f9ad81;
+			border-bottom: 2px solid #f9ad81;
+		}
+		.back-button {
+			background: #f9ad81;
+			color: white;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+			display: inline-block;
+			margin-bottom: 30px;
+			font-family: "Roboto Slab", sans-serif;
+			transition: 0.3s;
+		}
+		.back-button:hover {
+			background: #e89a6b;
+			color: white;
+			text-decoration: none;
+		}
+		.main-content {
+			margin-top: 100px;
+			padding: 50px 0;
+		}
+		.page-title {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		.page-title h1 {
+			font-size: 48px;
+			color: #2c3e50;
+			margin-bottom: 20px;
+			font-family: "Roboto Slab", sans-serif;
+		}
+		.page-title p {
+			font-size: 18px;
+			color: #7f8c8d;
+		}
+		.document-grid {
+			margin-bottom: 40px;
+		}
+		.document-item {
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		.document-item img {
+			width: 100%;
+			height: 400px;
+			object-fit: cover;
+			border-radius: 8px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease;
+			cursor: pointer;
+			border: 2px solid #e0e0e0;
+		}
+		.document-item img:hover {
+			transform: scale(1.02);
+			border-color: #f9ad81;
+		}
+		.document-caption {
+			margin-top: 15px;
+			color: #2c3e50;
+			font-size: 16px;
+			font-weight: 500;
+			font-family: "Roboto Slab", sans-serif;
+			background: #f8f9fa;
+			padding: 10px;
+			border-radius: 5px;
+			border-left: 4px solid #f9ad81;
+		}
+		.document-caption .edit-name {
+			color: #666;
+			font-size: 14px;
+			font-style: italic;
+			margin-top: 5px;
+		}
+		.footer {
+			background: #000;
+			color: white;
+			text-align: center;
+			padding: 30px 0;
+			margin-top: 50px;
+		}
+		.intro-section {
+			background: #f8f9fa;
+			padding: 30px;
+			border-radius: 10px;
+			margin-bottom: 50px;
+			border-left: 4px solid #f9ad81;
+		}
+		.intro-section h3 {
+			color: #2c3e50;
+			margin-bottom: 15px;
+			font-family: "Roboto Slab", sans-serif;
+		}
+		.intro-section p {
+			color: #555;
+			line-height: 1.6;
+			margin-bottom: 10px;
+		}
+		.document-category {
+			background: #2c3e50;
+			color: white;
+			padding: 15px;
+			margin: 30px 0 20px 0;
+			text-align: center;
+			font-family: "Roboto Slab", sans-serif;
+			font-size: 20px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	
+	<header class="simple-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="index.html" class="logo">Familia Faria<span>.</span></a>
+				</div>
+				<div class="col-md-6 text-right">
+					<ul class="nav-menu">
+						<li><a href="index.html">Página Inicial</a></li>
+						<li><a href="encontro-anual-simples.html">Encontro e Memórias</a></li>
+						<li><a href="linhagem-custodio-simples.html">Linhagem</a></li>
+						<li><a href="origens-historia-simples.html">Origens</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="main-content">
+		<div class="container">
+			<a href="encontro-anual-simples.html" class="back-button">← Voltar aos Encontros</a>
+			
+			<div class="page-title">
+				<h1>Documentos Históricos</h1>
+				<p>Registros oficiais e certidões que preservam a história da família</p>
+			</div>
+
+			<div class="intro-section">
+				<h3>Sobre esta Coleção</h3>
+				<p>Esta seção reúne documentos históricos oficiais da família Faria, incluindo certidões de batismo, casamento e outros registros importantes. Cada documento representa um marco na história familiar e ajuda a comprovar e preservar nossa genealogia.</p>
+				<p>Estes registros são fundamentais para a pesquisa genealógica e constituem um patrimônio documental da família, preservando informações sobre datas, locais e relações familiares ao longo das gerações.</p>
+			</div>
+
+			<!-- Certidões de Casamento -->
+			<div class="document-category">
+				📋 Certidões de Casamento
+			</div>
+			<div class="document-grid">
+				<div class="row">
+					<div class="col-md-6 document-item">
+						<img src="images/Documentos/Casamento Custodio e Ernestina.jpg" alt="Casamento Custodio e Ernestina" onclick="openFullscreen(this)" data-index="0">
+						<div class="document-caption">
+							<strong>Casamento de Custodio e Ernestina</strong>
+							<div class="edit-name">Registro de casamento em segunda núpcias de Custódio Luiz de Faria e Ernestina Melgaço de Andrade, registro encontrado em Dores do Indaiá.</div>
+						</div>
+					</div>
+					<div class="col-md-6 document-item">
+						<img src="images/Documentos/Casamento de Josselino Pinto da Cunha e Maria Faustina de Faria.jpg" alt="Casamento Josselino e Maria Faustina" onclick="openFullscreen(this)" data-index="1">
+						<div class="document-caption">
+							<strong>Casamento de Josselino Pinto da Cunha e Maria Faustina de Faria</strong>
+							<div class="edit-name">Registro de casamento encontrado em Santo Antônio dos Tiros, Tiros, Minas Gerais.</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 document-item">
+						<img src="images/Documentos/Casamento Maria Madalena e Alvino F Araujo.jpg" alt="Casamento Maria Madalena e Alvino" onclick="openFullscreen(this)" data-index="2">
+						<div class="document-caption">
+							<strong>Casamento de Maria Madalena e Albino Fernandes de Araújo</strong>
+							<div class="edit-name">Registro de casamento encontrado em Santo Antônio dos Tiros, Tiros, Minas Gerais.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Certidões de Batismo -->
+			<div class="document-category">
+				⛪ Certidões de Batismo
+			</div>
+			<div class="document-grid">
+				<div class="row">
+					<div class="col-md-4 document-item">
+						<img src="images/Documentos/Batismo de Geraldo.jpg" alt="Batismo de Geraldo" onclick="openFullscreen(this)" data-index="3">
+						<div class="document-caption">
+							<strong>Batismo de Geraldo</strong>
+							<div class="edit-name">Geraldo filho de Custódio Faria Júnior e Saturnina.</div>
+						</div>
+					</div>
+					<div class="col-md-4 document-item">
+						<img src="images/Documentos/Batismo de Nair.jpg" alt="Batismo de Nair" onclick="openFullscreen(this)" data-index="4">
+						<div class="document-caption">
+							<strong>Batismo de Nair</strong>
+							<div class="edit-name">Nair filha de Osório de Faria e Estela.</div>
+						</div>
+					</div>
+					<div class="col-md-4 document-item">
+						<img src="images/Documentos/Batismo de Jose.jpg" alt="Batismo de Jose" onclick="openFullscreen(this)" data-index="5">
+						<div class="document-caption">
+							<strong>Batismo de José</strong>
+							<div class="edit-name">José filho de Segefredo Luiz de Faria e Anna Rodrigues, sendo padrinhos seu irmão e cunhada Custódio Faria Júnior e Saturnina.</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 document-item">
+						<img src="images/Documentos/Batismo de Orlando.jpg" alt="Batismo de Orlando" onclick="openFullscreen(this)" data-index="6">
+						<div class="document-caption">
+							<strong>Batismo de Orlando</strong>
+							<div class="edit-name">Orlando filho de Hipólito de Faria e Maria Augusta, sendo padrinhos seu irmão e cunhada Custódio Faria Júnior e Saturnina.</div>
+						</div>
+					</div>
+					<div class="col-md-4 document-item">
+						<img src="images/Documentos/Batismo de Nunes.jpg" alt="Batismo de Nunes" onclick="openFullscreen(this)" data-index="7">
+						<div class="document-caption">
+							<strong>Batismo de Nunes</strong>
+							<div class="edit-name">Nunes filho de Augusta Luiza de Faria e José Luiz de Faria, sendo padrinhos seu irmão e cunhada Osório de Faria e Estela.</div>
+						</div>
+					</div>
+					<div class="col-md-4 document-item">
+						<img src="images/Documentos/Batismo de Olavo.jpg" alt="Batismo de Olavo" onclick="openFullscreen(this)" data-index="8">
+						<div class="document-caption">
+							<strong>Batismo de Olavo</strong>
+							<div class="edit-name">Olavo filho de Custódio Luiz de Faria e sua segunda esposa Ernestina.</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 document-item">
+						<img src="images/Documentos/Batismo de Aida.jpg" alt="Batismo de Aida" onclick="openFullscreen(this)" data-index="9">
+						<div class="document-caption">
+							<strong>Batismo de Aida</strong>
+							<div class="edit-name">Aida filha de Custódio Luiz de Faria e sua segunda esposa Ernestina.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Outros Documentos -->
+			<div class="document-category">
+				📄 Outros Documentos
+			</div>
+			<div class="document-grid">
+				<div class="row">
+					<div class="col-md-6 document-item">
+						<img src="images/Documentos/Certidao Segefredo.png" alt="Certidão de Segefredo" onclick="openFullscreen(this)" data-index="10">
+						<div class="document-caption">
+							<strong>Certidão de Segefredo Luiz de Faria</strong>
+							<div class="edit-name">Segefredo Luiz de Faria, filho de Custódio Luiz de Faria e Maria Jacinta da Silva.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div style="text-align: center; margin-top: 50px;">
+				<a href="encontro-anual-simples.html" class="back-button">← Voltar aos Encontros</a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; 2025 Familia Faria. Todos os direitos reservados.</p>
+		</div>
+	</footer>
+
+	<script>
+		// Array com todas as imagens da galeria
+		var galleryImages = [
+			'images/Documentos/Casamento Custodio e Ernestina.jpg',
+			'images/Documentos/Casamento de Josselino Pinto da Cunha e Maria Faustina de Faria.jpg',
+			'images/Documentos/Casamento Maria Madalena e Alvino F Araujo.jpg',
+			'images/Documentos/Batismo de Geraldo.jpg',
+			'images/Documentos/Batismo de Nair.jpg',
+			'images/Documentos/Batismo de Jose.jpg',
+			'images/Documentos/Batismo de Orlando.jpg',
+			'images/Documentos/Batismo de Nunes.jpg',
+			'images/Documentos/Batismo de Olavo.jpg',
+			'images/Documentos/Batismo de Aida.jpg',
+			'images/Documentos/Certidao Segefredo.png'
+		];
+		
+		var currentImageIndex = 0;
+		
+		function openFullscreen(img) {
+			// Usar o atributo data-index para navegação precisa
+			var dataIndex = img.getAttribute('data-index');
+			if (dataIndex !== null) {
+				currentImageIndex = parseInt(dataIndex);
+			} else {
+				// Fallback para o método anterior se data-index não existir
+				var imgSrc = img.src;
+				var fileName = imgSrc.split('/').pop().replace(/%20/g, ' ');
+				
+				currentImageIndex = galleryImages.findIndex(function(path) {
+					var pathFileName = path.split('/').pop();
+					return pathFileName === fileName;
+				});
+				if (currentImageIndex === -1) currentImageIndex = 0;
+			}
+			
+			// Criar overlay para visualização em tela cheia
+			var overlay = document.createElement('div');
+			overlay.style.position = 'fixed';
+			overlay.style.top = '0';
+			overlay.style.left = '0';
+			overlay.style.width = '100%';
+			overlay.style.height = '100%';
+			overlay.style.backgroundColor = 'rgba(0,0,0,0.95)';
+			overlay.style.zIndex = '9999';
+			overlay.style.display = 'flex';
+			overlay.style.justifyContent = 'center';
+			overlay.style.alignItems = 'center';
+			
+			var fullImg = document.createElement('img');
+			fullImg.src = galleryImages[currentImageIndex];
+			fullImg.style.maxWidth = '90%';
+			fullImg.style.maxHeight = '90%';
+			fullImg.style.objectFit = 'contain';
+			fullImg.style.cursor = 'default';
+			fullImg.style.boxShadow = '0 0 30px rgba(0,0,0,0.8)';
+			
+			// Seta esquerda
+			var leftArrow = document.createElement('div');
+			leftArrow.innerHTML = '❮';
+			leftArrow.style.position = 'absolute';
+			leftArrow.style.left = '50px';
+			leftArrow.style.top = '50%';
+			leftArrow.style.transform = 'translateY(-50%)';
+			leftArrow.style.color = 'white';
+			leftArrow.style.fontSize = '40px';
+			leftArrow.style.cursor = 'pointer';
+			leftArrow.style.userSelect = 'none';
+			leftArrow.style.background = 'rgba(0,0,0,0.5)';
+			leftArrow.style.padding = '20px';
+			leftArrow.style.borderRadius = '50%';
+			leftArrow.style.transition = 'all 0.3s ease';
+			leftArrow.onmouseover = function() { this.style.background = 'rgba(249,173,129,0.8)'; };
+			leftArrow.onmouseout = function() { this.style.background = 'rgba(0,0,0,0.5)'; };
+			
+			// Seta direita
+			var rightArrow = document.createElement('div');
+			rightArrow.innerHTML = '❯';
+			rightArrow.style.position = 'absolute';
+			rightArrow.style.right = '50px';
+			rightArrow.style.top = '50%';
+			rightArrow.style.transform = 'translateY(-50%)';
+			rightArrow.style.color = 'white';
+			rightArrow.style.fontSize = '40px';
+			rightArrow.style.cursor = 'pointer';
+			rightArrow.style.userSelect = 'none';
+			rightArrow.style.background = 'rgba(0,0,0,0.5)';
+			rightArrow.style.padding = '20px';
+			rightArrow.style.borderRadius = '50%';
+			rightArrow.style.transition = 'all 0.3s ease';
+			rightArrow.onmouseover = function() { this.style.background = 'rgba(249,173,129,0.8)'; };
+			rightArrow.onmouseout = function() { this.style.background = 'rgba(0,0,0,0.5)'; };
+			
+			// Contador de documentos
+			var counter = document.createElement('div');
+			counter.style.position = 'absolute';
+			counter.style.bottom = '30px';
+			counter.style.left = '50%';
+			counter.style.transform = 'translateX(-50%)';
+			counter.style.color = 'white';
+			counter.style.fontSize = '18px';
+			counter.style.background = 'rgba(0,0,0,0.7)';
+			counter.style.padding = '10px 20px';
+			counter.style.borderRadius = '25px';
+			counter.style.fontFamily = 'Roboto, sans-serif';
+			
+			// Adicionar texto informativo
+			var helpText = document.createElement('div');
+			helpText.innerHTML = 'ESC para fechar • ← → para navegar';
+			helpText.style.position = 'absolute';
+			helpText.style.top = '20px';
+			helpText.style.right = '20px';
+			helpText.style.color = 'white';
+			helpText.style.fontSize = '16px';
+			helpText.style.background = 'rgba(0,0,0,0.7)';
+			helpText.style.padding = '10px 15px';
+			helpText.style.borderRadius = '5px';
+			helpText.style.fontFamily = 'Roboto, sans-serif';
+			
+			// Função para atualizar a imagem
+			function updateImage() {
+				fullImg.src = galleryImages[currentImageIndex];
+				counter.innerHTML = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+				
+				// Mostrar/esconder setas conforme necessário
+				leftArrow.style.opacity = currentImageIndex > 0 ? '1' : '0.3';
+				rightArrow.style.opacity = currentImageIndex < galleryImages.length - 1 ? '1' : '0.3';
+			}
+			
+			// Navegação anterior
+			function prevImage() {
+				if (currentImageIndex > 0) {
+					currentImageIndex--;
+					updateImage();
+				}
+			}
+			
+			// Navegação próxima
+			function nextImage() {
+				if (currentImageIndex < galleryImages.length - 1) {
+					currentImageIndex++;
+					updateImage();
+				}
+			}
+			
+			// Event listeners das setas
+			leftArrow.onclick = function(e) {
+				e.stopPropagation();
+				prevImage();
+			};
+			
+			rightArrow.onclick = function(e) {
+				e.stopPropagation();
+				nextImage();
+			};
+			
+			// Adicionar elementos ao overlay
+			overlay.appendChild(fullImg);
+			overlay.appendChild(leftArrow);
+			overlay.appendChild(rightArrow);
+			overlay.appendChild(counter);
+			overlay.appendChild(helpText);
+			document.body.appendChild(overlay);
+			
+			// Inicializar
+			updateImage();
+			
+			// Função para fechar
+			function closeFullscreen() {
+				if (document.body.contains(overlay)) {
+					document.body.removeChild(overlay);
+					document.removeEventListener('keydown', handleKeyPress);
+				}
+			}
+			
+			// Fechar ao clicar no fundo (não na imagem)
+			overlay.onclick = function(e) {
+				if (e.target === overlay) {
+					closeFullscreen();
+				}
+			};
+			
+			// Controles do teclado
+			function handleKeyPress(e) {
+				if (e.key === 'Escape' || e.keyCode === 27) {
+					closeFullscreen();
+				} else if (e.key === 'ArrowLeft' || e.keyCode === 37) {
+					prevImage();
+				} else if (e.key === 'ArrowRight' || e.keyCode === 39) {
+					nextImage();
+				}
+			}
+			
+			// Adicionar event listener para teclas
+			document.addEventListener('keydown', handleKeyPress);
+			
+			// Focar no overlay para garantir que receba eventos de teclado
+			overlay.focus();
+		}
+	</script>
+
+</body>
+</html> 
